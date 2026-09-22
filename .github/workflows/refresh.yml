@@ -1,0 +1,51 @@
+name: Refresh seminar calendar
+
+on:
+  schedule:
+    # Twice a day, matching the REFRESH-INTERVAL advertised in the feed.
+    - cron: "20 7 * * *"
+    - cron: "20 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-calendar
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild the feed
+        run: python scripts/build_ics.py
+
+      - name: Commit any change
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -n "$(git status --porcelain docs)" ]; then
+            git add docs
+            git commit -m "Refresh seminar calendar ($(date -u +%Y-%m-%d))"
+            git push
+            echo "Feed updated."
+            exit 0
+          fi
+
+          # GitHub disables scheduled workflows after 60 days without repo
+          # activity, which a quiet summer could easily reach. Keep it alive.
+          age_days=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
+          echo "No change; last commit was ${age_days} day(s) ago."
+          if [ "$age_days" -ge 30 ]; then
+            git commit --allow-empty -m "Keep scheduled refresh enabled"
+            git push
+          fi

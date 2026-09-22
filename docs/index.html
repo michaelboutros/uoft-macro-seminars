@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UofT Macro Seminars</title>
+<meta name="description" content="A calendar subscription for the macroeconomics seminars at the University of Toronto Department of Economics.">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --panel: #ffffff;
+    --ink: #1b1a17;
+    --muted: #6b6760;
+    --line: #e6e2db;
+    --accent: #002a5c;
+    --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16161a;
+      --panel: #1e1e24;
+      --ink: #eceae6;
+      --muted: #9b968e;
+      --line: #2e2e36;
+      --accent: #7fb3ff;
+      --accent-ink: #10131a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16161a; --panel: #1e1e24; --ink: #eceae6;
+    --muted: #9b968e; --line: #2e2e36; --accent: #7fb3ff; --accent-ink: #10131a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 3rem 16px 4rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0; }
+  h2 {
+    font: 600 .78rem/1.4 ui-sans-serif, system-ui, -apple-system, sans-serif;
+    letter-spacing: .09em; text-transform: uppercase; color: var(--muted);
+    margin: 2.5rem 0 .9rem;
+  }
+  .actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+  a.btn {
+    display: inline-block; text-decoration: none;
+    font: 500 .92rem/1 ui-sans-serif, system-ui, -apple-system, sans-serif;
+    padding: .72rem 1rem; border-radius: .5rem;
+    border: 1px solid var(--line); color: var(--ink); background: var(--panel);
+  }
+  a.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  a.btn:hover { border-color: var(--accent); }
+  .url {
+    margin-top: 1rem; padding: .8rem .9rem; background: var(--panel);
+    border: 1px solid var(--line); border-radius: .5rem;
+    font: .82rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    word-break: break-all; color: var(--muted);
+  }
+  ol.events { list-style: none; margin: 0; padding: 0; }
+  ol.events li { padding: .95rem 0; border-bottom: 1px solid var(--line); }
+  ol.events li:first-child { border-top: 1px solid var(--line); }
+  .when {
+    font: 600 .78rem/1.4 ui-sans-serif, system-ui, -apple-system, sans-serif;
+    letter-spacing: .04em; text-transform: uppercase; color: var(--accent);
+  }
+  .who { font-weight: 600; }
+  .what { color: var(--muted); }
+  footer {
+    margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--line);
+    color: var(--muted);
+    font: .85rem/1.6 ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>UofT Macro Seminars</h1>
+    <p class="sub">A calendar you can subscribe to once. It follows the macroeconomics seminar series at the University of Toronto Department of Economics and refreshes itself twice a day.</p>
+  </header>
+
+  <h2>Subscribe</h2>
+  <div class="actions">
+    <a class="btn primary" id="webcal" href="#">Apple Calendar / Outlook</a>
+    <a class="btn" id="gcal" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    <a class="btn" id="download" href="uoft-macro-seminars.ics">Download .ics</a>
+  </div>
+  <div class="url" id="feedurl"></div>
+
+  <h2>Upcoming</h2>
+  <ol class="events" id="events"><li class="what">Loading&hellip;</li></ol>
+
+  <footer>
+    <p id="meta"></p>
+    <p>Built from the <a href="https://www.economics.utoronto.ca/index.php/index/research/seminars?dateRange=future&amp;seriesId=13">department's seminar listing</a>. Source and build script on <a href="https://github.com/michaelboutros/uoft-macro-seminars">GitHub</a>.</p>
+  </footer>
+</div>
+
+<script>
+const ICS = "uoft-macro-seminars.ics";
+const abs = new URL(ICS, location.href).href;
+
+document.getElementById("feedurl").textContent = abs;
+document.getElementById("webcal").href = abs.replace(/^https?:/, "webcal:");
+document.getElementById("gcal").href =
+  "https://calendar.google.com/calendar/r?cid=" + encodeURIComponent(abs);
+
+function unfold(text) {
+  return text.replace(/\r\n/g, "\n").replace(/\n[ \t]/g, "");
+}
+function unescapeIcs(v) {
+  return v.replace(/\\([nN,;\\])/g, (_, c) => (c === "n" || c === "N") ? "\n" : c);
+}
+function parseStamp(v) {
+  const m = v.match(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})(Z?)$/);
+  if (!m) return null;
+  const [, y, mo, d, h, mi, s, z] = m;
+  return z
+    ? new Date(Date.UTC(+y, +mo - 1, +d, +h, +mi, +s))
+    : new Date(+y, +mo - 1, +d, +h, +mi, +s);
+}
+
+fetch(ICS, { cache: "no-cache" })
+  .then(r => r.ok ? r.text() : Promise.reject(new Error(r.status)))
+  .then(text => {
+    const now = new Date();
+    const events = unfold(text).split("BEGIN:VEVENT").slice(1).map(block => {
+      const get = name => {
+        const m = block.match(new RegExp("^" + name + "[^:\\n]*:(.*)$", "m"));
+        return m ? unescapeIcs(m[1].trim()) : "";
+      };
+      return { start: parseStamp(get("DTSTART")), summary: get("SUMMARY"), loc: get("LOCATION") };
+    }).filter(e => e.start && e.start >= now).sort((a, b) => a.start - b.start);
+
+    const list = document.getElementById("events");
+    list.innerHTML = "";
+    if (!events.length) {
+      list.innerHTML = '<li class="what">No seminars scheduled right now.</li>';
+      return;
+    }
+    const fmt = new Intl.DateTimeFormat("en-CA", {
+      weekday: "short", month: "short", day: "numeric",
+      hour: "numeric", minute: "2-digit", timeZone: "America/Toronto"
+    });
+    for (const e of events) {
+      // SUMMARY is "Macro: Speaker (Affiliation) — Title".
+      const body = e.summary.replace(/^Macro:\s*/, "");
+      const cut = body.indexOf(" — ");
+      const who = cut === -1 ? body : body.slice(0, cut);
+      const what = cut === -1 ? "Title to be announced" : body.slice(cut + 3);
+      const li = document.createElement("li");
+      const when = document.createElement("div");
+      when.className = "when";
+      when.textContent = fmt.format(e.start) + (e.loc ? " · " + e.loc : "");
+      const w = document.createElement("div");
+      w.className = "who";
+      w.textContent = who;
+      const t = document.createElement("div");
+      t.className = "what";
+      t.textContent = what;
+      li.append(when, w, t);
+      list.appendChild(li);
+    }
+  })
+  .catch(() => {
+    document.getElementById("events").innerHTML =
+      '<li class="what">Could not load the feed just now.</li>';
+  });
+
+fetch("events.json", { cache: "no-cache" })
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(d => {
+    const s = d.updated;
+    const when = parseStamp(s);
+    document.getElementById("meta").textContent =
+      "Feed last changed " + (when ? when.toLocaleString("en-CA", { timeZone: "America/Toronto" }) : s) +
+      " · " + d.upcoming + " upcoming, " + d.total + " total.";
+  })
+  .catch(() => {});
+</script>
+</body>
+</html>

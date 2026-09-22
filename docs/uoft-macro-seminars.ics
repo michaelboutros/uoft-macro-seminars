@@ -1,0 +1,272 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//michaelboutros//UofT Macro Seminars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UofT Macro Seminars
+X-WR-CALDESC:Macroeconomics seminars at the University of Toronto Departmen
+ t of Economics.
+X-WR-TIMEZONE:America/Toronto
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:s-25431@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260226T161000Z
+DTEND:20260226T173000Z
+SUMMARY:Macro: Alexander Bick (St Louis Fed) — Generative AI in the Labor
+  Market: Evidence and Some Theory
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Generative AI in the Labor Market: Evidence and Some Theory\n\n
+ Speaker: Alexander Bick (St Louis Fed)\nJoint with: Adam Blandin\, David D
+ eming\, and Tyler Schumacher\nSeries: Macroeconomics\n\nSpeaker page: http
+ s://sites.google.com/view/alexbick\nEvent page: https://www.economics.utor
+ onto.ca/index.php/index/calendar/event/s-25431
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2543
+ 1
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-25496@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260305T161000Z
+DTEND:20260305T173000Z
+SUMMARY:Macro: Adam Spencer (University of Bonn) — Heterogeneous Firms\, 
+ Growth and the Long Shadows of Business Cycles
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Heterogeneous Firms\, Growth and the Long Shadows of Business C
+ ycles\n\nSpeaker: Adam Spencer (University of Bonn)\nJoint with: Cristiana
+  Bendetti-Fasil\, Giammario Impullitti\, Omar Licandro\, Petr Sedlacek\nSe
+ ries: Macroeconomics\n\nSpeaker page: https://www.adamhalspencer.com/\nEve
+ nt page: https://www.economics.utoronto.ca/index.php/index/calendar/event/
+ s-25496
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2549
+ 6
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-25552@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260319T151000Z
+DTEND:20260319T163000Z
+SUMMARY:Macro: Roberto Pinheiro (Federal Reserve Bank of Cleveland) — AI-
+ Augmented Capital-Skill Complementarity
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:AI-Augmented Capital-Skill Complementarity\n\nSpeaker: Roberto 
+ Pinheiro (Federal Reserve Bank of Cleveland)\nJoint with: Andre Luduvice\n
+ Series: Macroeconomics\n\nSpeaker page: https://sites.google.com/site/rbpi
+ nheiro/\nEvent page: https://www.economics.utoronto.ca/index.php/index/cal
+ endar/event/s-25552
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2555
+ 2
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-25551@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260326T151000Z
+DTEND:20260326T163000Z
+SUMMARY:Macro: Luke Rawling (Queens University) — Networks\, Sorting\, an
+ d the Productivity Implications of Immigrant Assimilation
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Networks\, Sorting\, and the Productivity Implications of Immig
+ rant Assimilation\n\nSpeaker: Luke Rawling (Queens University)\nSeries: Ma
+ croeconomics\n\nSpeaker page: https://www.lukerawling.ca\nEvent page: http
+ s://www.economics.utoronto.ca/index.php/index/calendar/event/s-25551
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2555
+ 1
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-25553@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260409T151000Z
+DTEND:20260409T163000Z
+SUMMARY:Macro: Ludwig Straub (Harvard University) — Optimal Long-Run Fisc
+ al Policy with Heterogeneous Agents
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Optimal Long-Run Fiscal Policy with Heterogeneous Agents\n\nSpe
+ aker: Ludwig Straub (Harvard University)\nSeries: Macroeconomics\n\nSpeake
+ r page: https://straub.scholars.harvard.edu\nEvent page: https://www.econo
+ mics.utoronto.ca/index.php/index/calendar/event/s-25553
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2555
+ 3
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-25554@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260413T161000Z
+DTEND:20260413T173000Z
+SUMMARY:Macro: Pete Klenow (Stanford University) — Idea Rents and Firm Gr
+ owth
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Idea Rents and Firm Growth\n\nSpeaker: Pete Klenow (Stanford Un
+ iversity)\nJoint with: Timo Boppart\, Reiko Laski\, & Huiyu Li\nSeries: Ma
+ croeconomics\n\nSpeaker page: http://klenow.com\nEvent page: https://www.e
+ conomics.utoronto.ca/index.php/index/calendar/event/s-25554
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2555
+ 4
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-25555@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260423T151000Z
+DTEND:20260423T163000Z
+SUMMARY:Macro: Sergio Ocampo Diaz (Western University) — Markup Accountin
+ g
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Markup Accounting\n\nSpeaker: Sergio Ocampo Diaz (Western Unive
+ rsity)\nSeries: Macroeconomics\n\nSpeaker page: https://sites.google.com/s
+ ite/sergiocampod\nEvent page: https://www.economics.utoronto.ca/index.php/
+ index/calendar/event/s-25555
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2555
+ 5
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-25556@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260430T151000Z
+DTEND:20260430T163000Z
+SUMMARY:Macro: Aloysius Siow (University of Toronto) — Hierarchies: The e
+ quilibrium organizations of workplaces.
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Hierarchies: The equilibrium organizations of workplaces.\n\nSp
+ eaker: Aloysius Siow (University of Toronto)\nSeries: Macroeconomics\n\nSp
+ eaker page: https://www.economics.utoronto.ca/siow/\nEvent page: https://w
+ ww.economics.utoronto.ca/index.php/index/calendar/event/s-25556
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2555
+ 6
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-26027@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260910T151000Z
+DTEND:20260910T163000Z
+SUMMARY:Macro: Etiene Lale (York University) — Beyond the Target: Labor M
+ arket Spillovers from California’s Fast-Food Minimum Wage
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Beyond the Target: Labor Market Spillovers from California’s 
+ Fast-Food Minimum Wage\n\nSpeaker: Etiene Lale (York University)\nSeries: 
+ Macroeconomics\n\nSpeaker page: https://sites.google.com/view/etiennelale/
+ \nEvent page: https://www.economics.utoronto.ca/index.php/index/calendar/e
+ vent/s-26027
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2602
+ 7
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-26061@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260914T161000Z
+DTEND:20260914T173000Z
+SUMMARY:Macro: Stephanie Ettmeier (CERGE-EI) — Measuring the Effects of A
+ ggregate Shocks on Unit-Level Outcomes and Their Distribution
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Measuring the Effects of Aggregate Shocks on Unit-Level Outcome
+ s and Their Distribution\n\nSpeaker: Stephanie Ettmeier (CERGE-EI)\nJoint 
+ with: Chi Hyun Kim (HU Berlin) and Frank Schorfheide (U Penn)\nSeries: Mac
+ roeconomics\n\nSpeaker page: https://www.stephanieettmeier.com\nEvent page
+ : https://www.economics.utoronto.ca/index.php/index/calendar/event/s-26061
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2606
+ 1
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-26029@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20260924T151000Z
+DTEND:20260924T163000Z
+SUMMARY:Macro: Marcelo Pedroni (Inter American Development Bank) — Labor 
+ Income Tax Progressivity with a Large Informal Sector
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Labor Income Tax Progressivity with a Large Informal Sector\n\n
+ Speaker: Marcelo Pedroni (Inter American Development Bank)\nOrganizer: Seb
+ astian Dyrda\nSeries: Macroeconomics\n\nSpeaker page: https://sites.google
+ .com/site/marcelozouainpedroni/\nEvent page: https://www.economics.utoront
+ o.ca/index.php/index/calendar/event/s-26029
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2602
+ 9
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-26031@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20261001T151000Z
+DTEND:20261001T163000Z
+SUMMARY:Macro: Gideon Bornstein (Wharton) — IneQuality: The Distributiona
+ l Consequences of Market Power
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:IneQuality: The Distributional Consequences of Market Power\n\n
+ Speaker: Gideon Bornstein (Wharton)\nJoint with: Alessandra Peter\nOrganiz
+ er: Michael Boutros and Sebastian Dyrda\nSeries: Macroeconomics\n\nSpeaker
+  page: https://gideon-bornstein.com\nEvent page: https://www.economics.uto
+ ronto.ca/index.php/index/calendar/event/s-26031
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2603
+ 1
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-26034@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20261015T151000Z
+DTEND:20261015T163000Z
+SUMMARY:Macro: Oliver Pfäuti (University of Texas at Austin)
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:TBA\n\nSpeaker: Oliver Pfäuti (University of Texas at Austin)\
+ nOrganizer: Michael Boutros and Sebastian Dyrda\nSeries: Macroeconomics\n\
+ nSpeaker page: https://sites.google.com/view/pfaeuti/\nEvent page: https:/
+ /www.economics.utoronto.ca/index.php/index/calendar/event/s-26034
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2603
+ 4
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-26030@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20261105T161000Z
+DTEND:20261105T173000Z
+SUMMARY:Macro: Gabriel Mihalache (Ohio State)
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:TBA\n\nSpeaker: Gabriel Mihalache (Ohio State)\nOrganizer: Seba
+ stian Dyrda and Joseph Steinberg\nSeries: Macroeconomics\n\nSpeaker page: 
+ https://gmihalache.com/\nEvent page: https://www.economics.utoronto.ca/ind
+ ex.php/index/calendar/event/s-26030
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2603
+ 0
+CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:s-26032@economics.utoronto.ca
+DTSTAMP:20260922T204230Z
+LAST-MODIFIED:20260922T204230Z
+DTSTART:20261119T161000Z
+DTEND:20261119T173000Z
+SUMMARY:Macro: Ezra Overfield (Cornell University)
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:TBA\n\nSpeaker: Ezra Overfield (Cornell University)\nOrganizer:
+  Sebastian Dyrda\nSeries: Macroeconomics\n\nSpeaker page: https://ezraober
+ field.github.io\nEvent page: https://www.economics.utoronto.ca/index.php/i
+ ndex/calendar/event/s-26032
+URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2603
+ 2
+CATEGORIES:Macroeconomics
+END:VEVENT
+END:VCALENDAR
