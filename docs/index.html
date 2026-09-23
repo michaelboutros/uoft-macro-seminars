@@ -70,6 +70,13 @@
     letter-spacing: .04em; text-transform: uppercase; color: var(--accent);
   }
   .who { font-weight: 600; }
+  .tag {
+    display: inline-block; margin-left: .5rem; vertical-align: 1px;
+    padding: .1rem .4rem; border-radius: .25rem;
+    border: 1px solid var(--line); color: var(--muted); background: var(--bg);
+    font: 600 .65rem/1.5 ui-sans-serif, system-ui, -apple-system, sans-serif;
+    letter-spacing: .06em; text-transform: uppercase;
+  }
   .what { color: var(--muted); }
   footer {
     margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--line);
@@ -83,7 +90,7 @@
 <div class="wrap">
   <header>
     <h1>UofT Macro Seminars</h1>
-    <p class="sub">A calendar you can subscribe to once. It follows the macroeconomics seminar series at the University of Toronto Department of Economics and refreshes itself twice a day.</p>
+    <p class="sub">A calendar you can subscribe to once. It follows the macroeconomics seminar series and the macro brown bag workshop at the University of Toronto Department of Economics, and refreshes itself twice a day.</p>
   </header>
 
   <h2>Subscribe</h2>
@@ -99,7 +106,7 @@
 
   <footer>
     <p id="meta"></p>
-    <p>Built from the <a href="https://www.economics.utoronto.ca/index.php/index/research/seminars?dateRange=future&amp;seriesId=13">department's seminar listing</a>. Source and build script on <a href="https://github.com/michaelboutros/uoft-macro-seminars">GitHub</a>.</p>
+    <p>Built from the <a href="https://www.economics.utoronto.ca/index.php/index/research/seminars?dateRange=future&amp;seriesId=13">department's seminar listing</a> and the brown bag <a href="https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_151oFyBqFwRC8/edit">sign-up sheet</a>. Source and build script on <a href="https://github.com/michaelboutros/uoft-macro-seminars">GitHub</a>.</p>
   </footer>
 </div>
 
@@ -150,8 +157,9 @@ fetch(ICS, { cache: "no-cache" })
       hour: "numeric", minute: "2-digit", timeZone: "America/Toronto"
     });
     for (const e of events) {
-      // SUMMARY is "Macro: Speaker (Affiliation) — Title".
-      const body = e.summary.replace(/^Macro:\s*/, "");
+      // SUMMARY is "<kind>: Speaker (Affiliation) — Title".
+      const kind = /^Brown bag:/.test(e.summary) ? "Brown bag" : "Seminar";
+      const body = e.summary.replace(/^(Macro|Brown bag):\s*/, "");
       const cut = body.indexOf(" — ");
       const who = cut === -1 ? body : body.slice(0, cut);
       const what = cut === -1 ? "Title to be announced" : body.slice(cut + 3);
@@ -162,6 +170,10 @@ fetch(ICS, { cache: "no-cache" })
       const w = document.createElement("div");
       w.className = "who";
       w.textContent = who;
+      const tag = document.createElement("span");
+      tag.className = "tag";
+      tag.textContent = kind;
+      w.appendChild(tag);
       const t = document.createElement("div");
       t.className = "what";
       t.textContent = what;
@@ -181,7 +193,8 @@ fetch("events.json", { cache: "no-cache" })
     const when = parseStamp(s);
     document.getElementById("meta").textContent =
       "Feed last changed " + (when ? when.toLocaleString("en-CA", { timeZone: "America/Toronto" }) : s) +
-      " · " + d.upcoming + " upcoming, " + d.total + " total.";
+      " · " + d.upcoming + " upcoming · " + d.total + " total (" +
+      d.seminars + " seminars, " + d.brownbags + " brown bags).";
   })
   .catch(() => {});
 </script>

@@ -4,15 +4,15 @@ PRODID:-//michaelboutros//UofT Macro Seminars//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:UofT Macro Seminars
-X-WR-CALDESC:Macroeconomics seminars at the University of Toronto Departmen
- t of Economics.
+X-WR-CALDESC:Macroeconomics seminars and the macro brown bag workshop at th
+ e University of Toronto Department of Economics.
 X-WR-TIMEZONE:America/Toronto
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:s-25431@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260226T161000Z
 DTEND:20260226T173000Z
 SUMMARY:Macro: Alexander Bick (St Louis Fed) — Generative AI in the Labor
@@ -29,8 +29,8 @@ CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
 UID:s-25496@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260305T161000Z
 DTEND:20260305T173000Z
 SUMMARY:Macro: Adam Spencer (University of Bonn) — Heterogeneous Firms\, 
@@ -48,8 +48,8 @@ CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
 UID:s-25552@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260319T151000Z
 DTEND:20260319T163000Z
 SUMMARY:Macro: Roberto Pinheiro (Federal Reserve Bank of Cleveland) — AI-
@@ -66,8 +66,8 @@ CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
 UID:s-25551@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260326T151000Z
 DTEND:20260326T163000Z
 SUMMARY:Macro: Luke Rawling (Queens University) — Networks\, Sorting\, an
@@ -83,8 +83,8 @@ CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
 UID:s-25553@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260409T151000Z
 DTEND:20260409T163000Z
 SUMMARY:Macro: Ludwig Straub (Harvard University) — Optimal Long-Run Fisc
@@ -100,8 +100,8 @@ CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
 UID:s-25554@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260413T161000Z
 DTEND:20260413T173000Z
 SUMMARY:Macro: Pete Klenow (Stanford University) — Idea Rents and Firm Gr
@@ -117,8 +117,8 @@ CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
 UID:s-25555@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260423T151000Z
 DTEND:20260423T163000Z
 SUMMARY:Macro: Sergio Ocampo Diaz (Western University) — Markup Accountin
@@ -134,8 +134,8 @@ CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
 UID:s-25556@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260430T151000Z
 DTEND:20260430T163000Z
 SUMMARY:Macro: Aloysius Siow (University of Toronto) — Hierarchies: The e
@@ -151,8 +151,8 @@ CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
 UID:s-26027@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260910T151000Z
 DTEND:20260910T163000Z
 SUMMARY:Macro: Etiene Lale (York University) — Beyond the Target: Labor M
@@ -169,8 +169,8 @@ CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
 UID:s-26061@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260914T161000Z
 DTEND:20260914T173000Z
 SUMMARY:Macro: Stephanie Ettmeier (CERGE-EI) — Measuring the Effects of A
@@ -186,9 +186,41 @@ URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2606
 CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
+UID:bb-20260917@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20260917T151000Z
+DTEND:20260917T163000Z
+SUMMARY:Brown bag: TBA
+LOCATION:Max Gluskin House\, room 1-6
+DESCRIPTION:TBA\n\nPresenter: TBA\nSeries: Macro brown bag workshop\n\nSche
+ dule and sign-up: https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4p
+ WxpfbdePqfeZp_151oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
+UID:bb-20260921@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20260921T161000Z
+DTEND:20260921T170000Z
+SUMMARY:Brown bag: Anton Tsoy — Testing times: reputation for debt discip
+ line
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Testing times: reputation for debt discipline\n\nPresenter: Ant
+ on Tsoy\nSeries: Macro brown bag workshop\n\nSchedule and sign-up: https:/
+ /docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_151oFyBqFwR
+ C8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
 UID:s-26029@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20260924T151000Z
 DTEND:20260924T163000Z
 SUMMARY:Macro: Marcelo Pedroni (Inter American Development Bank) — Labor 
@@ -204,9 +236,26 @@ URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2602
 CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
+UID:bb-20260928@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20260928T161000Z
+DTEND:20260928T170000Z
+SUMMARY:Brown bag: Mahmood Haddara — Protectionist Tariffs With Third Cou
+ ntry Effects
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Protectionist Tariffs With Third Country Effects\n\nPresenter: 
+ Mahmood Haddara\nSeries: Macro brown bag workshop\n\nSchedule and sign-up:
+  https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_151
+ oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
 UID:s-26031@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20261001T151000Z
 DTEND:20261001T163000Z
 SUMMARY:Macro: Gideon Bornstein (Wharton) — IneQuality: The Distributiona
@@ -222,9 +271,24 @@ URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2603
 CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
+UID:bb-20261005@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20261005T161000Z
+DTEND:20261005T170000Z
+SUMMARY:Brown bag: Ben Wolfrum — SYP
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:SYP\n\nPresenter: Ben Wolfrum\nSeries: Macro brown bag workshop
+ \n\nSchedule and sign-up: https://docs.google.com/spreadsheets/d/1KdPRBJ87
+ OnCImU4pWxpfbdePqfeZp_151oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
 UID:s-26034@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20261015T151000Z
 DTEND:20261015T163000Z
 SUMMARY:Macro: Oliver Pfäuti (University of Texas at Austin)
@@ -238,9 +302,41 @@ URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2603
 CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
+UID:bb-20261019@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20261019T161000Z
+DTEND:20261019T170000Z
+SUMMARY:Brown bag: Stefan Fassler — Vintage Debt and State-Dependent Mone
+ tary Policy (SYP)
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:Vintage Debt and State-Dependent Monetary Policy (SYP)\n\nPrese
+ nter: Stefan Fassler\nSeries: Macro brown bag workshop\n\nSchedule and sig
+ n-up: https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZ
+ p_151oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
+UID:bb-20261102@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20261102T171000Z
+DTEND:20261102T180000Z
+SUMMARY:Brown bag: Tam Le
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:TBA\n\nPresenter: Tam Le\nSeries: Macro brown bag workshop\n\nS
+ chedule and sign-up: https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCIm
+ U4pWxpfbdePqfeZp_151oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
 UID:s-26030@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20261105T161000Z
 DTEND:20261105T173000Z
 SUMMARY:Macro: Gabriel Mihalache (Ohio State)
@@ -254,9 +350,39 @@ URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2603
 CATEGORIES:Macroeconomics
 END:VEVENT
 BEGIN:VEVENT
+UID:bb-20261109@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20261109T171000Z
+DTEND:20261109T180000Z
+SUMMARY:Brown bag: Renato Zimmermann
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:TBA\n\nPresenter: Renato Zimmermann\nSeries: Macro brown bag wo
+ rkshop\n\nSchedule and sign-up: https://docs.google.com/spreadsheets/d/1Kd
+ PRBJ87OnCImU4pWxpfbdePqfeZp_151oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
+UID:bb-20261116@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20261116T171000Z
+DTEND:20261116T180000Z
+SUMMARY:Brown bag: Jonathan Brasseur
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:TBA\n\nPresenter: Jonathan Brasseur\nSeries: Macro brown bag wo
+ rkshop\n\nSchedule and sign-up: https://docs.google.com/spreadsheets/d/1Kd
+ PRBJ87OnCImU4pWxpfbdePqfeZp_151oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
 UID:s-26032@economics.utoronto.ca
-DTSTAMP:20260922T204230Z
-LAST-MODIFIED:20260922T204230Z
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
 DTSTART:20261119T161000Z
 DTEND:20261119T173000Z
 SUMMARY:Macro: Ezra Overfield (Cornell University)
@@ -268,5 +394,50 @@ DESCRIPTION:TBA\n\nSpeaker: Ezra Overfield (Cornell University)\nOrganizer:
 URL:https://www.economics.utoronto.ca/index.php/index/calendar/event/s-2603
  2
 CATEGORIES:Macroeconomics
+END:VEVENT
+BEGIN:VEVENT
+UID:bb-20261123@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20261123T171000Z
+DTEND:20261123T180000Z
+SUMMARY:Brown bag: Zhongdao Wang
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:TBA\n\nPresenter: Zhongdao Wang\nSeries: Macro brown bag worksh
+ op\n\nSchedule and sign-up: https://docs.google.com/spreadsheets/d/1KdPRBJ
+ 87OnCImU4pWxpfbdePqfeZp_151oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
+UID:bb-20261130@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20261130T171000Z
+DTEND:20261130T180000Z
+SUMMARY:Brown bag: Ismail Landolsi
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:TBA\n\nPresenter: Ismail Landolsi\nSeries: Macro brown bag work
+ shop\n\nSchedule and sign-up: https://docs.google.com/spreadsheets/d/1KdPR
+ BJ87OnCImU4pWxpfbdePqfeZp_151oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
+END:VEVENT
+BEGIN:VEVENT
+UID:bb-20261207@uoft-macro-seminars
+DTSTAMP:20260923T001450Z
+LAST-MODIFIED:20260923T001450Z
+DTSTART:20261207T171000Z
+DTEND:20261207T180000Z
+SUMMARY:Brown bag: Mehmet Akin Simsek
+LOCATION:Max Gluskin House\, room 106
+DESCRIPTION:TBA\n\nPresenter: Mehmet Akin Simsek\nSeries: Macro brown bag w
+ orkshop\n\nSchedule and sign-up: https://docs.google.com/spreadsheets/d/1K
+ dPRBJ87OnCImU4pWxpfbdePqfeZp_151oFyBqFwRC8/edit
+URL:https://docs.google.com/spreadsheets/d/1KdPRBJ87OnCImU4pWxpfbdePqfeZp_1
+ 51oFyBqFwRC8/edit
+CATEGORIES:Macro brown bag
 END:VEVENT
 END:VCALENDAR
