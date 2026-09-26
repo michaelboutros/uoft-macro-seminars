@@ -27,6 +27,7 @@ import io
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -70,10 +71,17 @@ MONTHS = {m: i for i, m in enumerate(
      "August", "September", "October", "November", "December"], start=1)}
 
 
-def fetch(url):
+def fetch(url, attempts=3):
+    """GET a URL, retrying transient network failures with a short backoff."""
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.read().decode("utf-8", "replace")
+    for i in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return r.read().decode("utf-8", "replace")
+        except (urllib.error.URLError, OSError):
+            if i == attempts - 1:
+                raise
+            time.sleep(30 * (i + 1))
 
 
 # --------------------------------------------------------------------------
@@ -367,7 +375,7 @@ def brownbag_events():
 
 
 def published_events(category):
-    """Brown bags already in the published feed, for use as a fallback."""
+    """Events of one category already in the published feed, as a fallback."""
     if not OUT.exists():
         return []
     events = []
@@ -417,8 +425,11 @@ def main():
     try:
         seminars = department_events()
     except (urllib.error.URLError, OSError) as exc:
-        print(f"error: could not fetch department seminars: {exc}", file=sys.stderr)
-        return 1
+        # The department site times out now and then. Keep what is already
+        # published rather than failing; the next scheduled run catches up.
+        seminars = [e for c in SERIES.values() for e in published_events(c)]
+        print(f"::warning::department site unreachable ({exc}); "
+              f"kept {len(seminars)} already-published seminar(s)", file=sys.stderr)
     if not seminars:
         print("error: no department seminars found, refusing to rewrite the feed",
               file=sys.stderr)
